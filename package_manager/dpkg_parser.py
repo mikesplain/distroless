@@ -24,7 +24,7 @@ try:
 except ImportError:
     from urlparse import urlparse
     from urllib import urlencode
-    from urllib2 import urlopen, Request, HTTPError
+    # from urllib2 import urlopen, Request, HTTPError
 
 from package_manager.parse_metadata import parse_package_metadata
 from package_manager import util
