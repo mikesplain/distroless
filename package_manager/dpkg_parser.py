@@ -14,10 +14,17 @@
 
 import argparse
 import gzip
-import urllib2
 import json
 import os
 
+try:
+    from urllib.parse import urlparse, urlencode
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError
+except ImportError:
+    from urlparse import urlparse
+    from urllib import urlencode
+    from urllib2 import urlopen, Request, HTTPError
 
 from package_manager.parse_metadata import parse_package_metadata
 from package_manager import util
