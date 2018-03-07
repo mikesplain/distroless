@@ -5,5 +5,5 @@ def package_manager_repositories():
       name = "dpkg_parser",
       url = ('https://s3.amazonaws.com/splain-public/dpkg_parser.par'),
       executable = True,
-      sha256 = "f9deb838db71fac20b7579fdd611405f96eff8d73d10e733f5a6e05a495c537d",
+      sha256 = "76f646257c78440e5464cebb8348b077810435303d8e6e6d7638d4e16c4b40a3",
   )

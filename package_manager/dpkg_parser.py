@@ -183,7 +183,7 @@ SHA256: 52ec3ac93cf8ba038fbcefe1e78f26ca1d59356cdc95e60f987c3f52b3f5e7ef
     with gzip.open("Packages.gz", 'rb') as f:
         data = f.read()
     metadata = parse_package_metadata(data, mirror_url, snapshot, package_prefix)
-    with open(PACKAGES_FILE_NAME, 'w') as f:
+    with open(PACKAGES_FILE_NAME, 'wb') as f:
         json.dump(metadata, f)
 
 if __name__ == "__main__":
